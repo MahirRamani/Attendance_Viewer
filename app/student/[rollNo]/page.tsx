@@ -169,6 +169,7 @@ import Link from 'next/link'
 const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwTPOsTimgKX11KH47P-yQxxT41e9OyvesRkUUjURdiXfsmLNvOIGeyVxXQTQrq-whUNg/exec'
 
 async function getStudentData(rollNo: string) {
+  console.log(`${GOOGLE_SCRIPT_URL}?rollNo=${rollNo}`);
   const res = await fetch(`${GOOGLE_SCRIPT_URL}?rollNo=${rollNo}`, {
     cache: 'no-store',
     headers: {
