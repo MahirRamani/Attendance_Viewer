@@ -200,7 +200,7 @@ export default async function StudentPage({ params }: { params: Promise<{ rollNo
       {/* Card Section */}
       <Card className="w-full max-w-md">
         <CardHeader>
-          <CardTitle className="text-center">Student Attendance Data</CardTitle>
+          <CardTitle className="text-center !text-black">Student Attendance Data</CardTitle>
         </CardHeader>
         <CardContent>
           {studentData.error ? (
