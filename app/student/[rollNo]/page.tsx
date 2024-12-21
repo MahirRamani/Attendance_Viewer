@@ -215,7 +215,7 @@ export default async function StudentPage({ params }: { params: Promise<{ rollNo
               <StudentData student={studentData} />
               <div className="mt-4 text-center">
                 <Button asChild className="bg-purple-500 text-white hover:bg-purple-600">
-                  <Link href="/student">Search Another</Link>
+                  <Link className="text-black" href="/student">Search Another</Link>
                 </Button>
               </div>
             </>
