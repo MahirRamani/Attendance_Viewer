@@ -84,11 +84,11 @@
 //       'Content-Type': 'application/json',
 //     },
 //   })
-  
+
 //   if (!res.ok) {
 //     throw new Error('Failed to fetch data')
 //   }
-  
+
 //   return res.json()
 // }
 
@@ -165,20 +165,21 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 // Replace this URL with your Google Apps Script web app URL
-const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL || ''
+// const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL || ''
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwTPOsTimgKX11KH47P-yQxxT41e9OyvesRkUUjURdiXfsmLNvOIGeyVxXQTQrq-whUNg/exec'
 
 async function getStudentData(rollNo: string) {
-  const res = await fetch(`${GOOGLE_SCRIPT_URL}?rollNo=${rollNo}`, { 
+  const res = await fetch(`${GOOGLE_SCRIPT_URL}?rollNo=${rollNo}`, {
     cache: 'no-store',
     headers: {
       'Content-Type': 'application/json',
     },
   })
-  
+
   if (!res.ok) {
     throw new Error('Failed to fetch data')
   }
-  
+
   return res.json()
 }
 
