@@ -314,7 +314,7 @@ export function StudentData({ student }: StudentDataProps) {
                                         </span>
                                     </TableCell>
                                     {/* Render E-Present and E-% together */}
-                                    <TableCell className={periodData["E-%"] <= 60 ? "bg-red-400" : "bg-green-300"}>
+                                    <TableCell className={periodData["E-%"] <= 80 ? "bg-red-400" : "bg-green-300"}>
                                         <span>{periodData["E-Present Days"]}</span>
                                         <span> </span>
                                         <span>
