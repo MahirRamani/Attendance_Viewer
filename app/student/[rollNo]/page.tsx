@@ -4,7 +4,7 @@ import { Button } from '@/components/ui/button'
 import Link from 'next/link'
 
 // Replace this URL with your Google Apps Script web app URL
-const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL || '';
+const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwTPOsTimgKX11KH47P-yQxxT41e9OyvesRkUUjURdiXfsmLNvOIGeyVxXQTQrq-whUNg/exec'
 
 console.log("GOOGLE_SCRIPT_URL", GOOGLE_SCRIPT_URL);
 
