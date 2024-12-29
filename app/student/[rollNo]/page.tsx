@@ -9,8 +9,7 @@ const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL || '';
 console.log("GOOGLE_SCRIPT_URL", GOOGLE_SCRIPT_URL);
 
 async function getStudentData(rollNo: string) {
-  console.log(`${GOOGLE_SCRIPT_URL}?rollNo=${rollNo}`);
-  const res = await fetch(`${GOOGLE_SCRIPT_URL}?rollNo=${rollNo}`, {
+  const res = await fetch(encodeURI(`${GOOGLE_SCRIPT_URL}?rollNo=${rollNo}`), {
     cache: 'no-store',
     headers: {
       'Content-Type': 'application/json',
