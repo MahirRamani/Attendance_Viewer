@@ -2,9 +2,10 @@ import { StudentData } from '@/components/student-data'
 import { Card, CardContent, CardHeader, CardTitle } from '@/components/ui/card'
 import { Button } from '@/components/ui/button'
 import Link from 'next/link'
+require("dotenv").config();
 
 // Replace this URL with your Google Apps Script web app URL
-const GOOGLE_SCRIPT_URL = 'https://script.google.com/macros/s/AKfycbwTPOsTimgKX11KH47P-yQxxT41e9OyvesRkUUjURdiXfsmLNvOIGeyVxXQTQrq-whUNg/exec'
+const GOOGLE_SCRIPT_URL = process.env.GOOGLE_SCRIPT_URL as string;
 
 console.log("GOOGLE_SCRIPT_URL", GOOGLE_SCRIPT_URL);
 
